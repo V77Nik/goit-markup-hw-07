@@ -1,39 +1,61 @@
 .nav,
-.main-nav,
-.connect,
-.connect__details {
+.main-nav {
     display: flex;
     align-items: center;
+    &__logo {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        color: var(--accent-color);
+        margin-left: auto;
+    }
+    &__desc {
+        color: #000000;
+    }
+    &__link {
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--first-title-color);
+
+        transition: color var(--timing-function);
+    }
 }
 
+.connect {
+    display: flex;
+    align-items: center;
+    &__icon {
+        margin-right: 10px;
+        fill: currentColor;
+    }
+    &__details {
+        display: flex;
+        align-items: center;
+        & {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.02em;
+            color: var(--third-title-color);
+            padding-top: 32px;
+            padding-bottom: 32px;
+            margin-right: 30px;
 
-.nav__logo {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--accent-color);
-    margin-left: auto;
-}
-
-.nav__desc {
-    color: #000000;
-}
-
-.nav__link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--first-title-color);
-
-    transition: color var(--timing-function);
-
+            transition: color var(--timing-function);
+        }
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+    }
 }
 
 .current {
@@ -52,31 +74,12 @@
     bottom: 0;
 }
 
-.connect__details {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--third-title-color);
-    padding-top: 32px;
-    padding-bottom: 32px;
-    margin-right: 30px;
-
-    transition: color var(--timing-function);
-
-}
-
 .tel {
     margin-right: 0px;
 }
 
 .nav__link:hover,
 .nav__link:focus {
-    color: var(--accent-color);
-}
-
-.connect__details:hover,
-.connect__details:focus {
     color: var(--accent-color);
 }
 
@@ -88,11 +91,4 @@
 
 .nav__item:not(:last-child) {
     margin-right: 50px;
-}
-
-
-
-.connect__icon {
-    margin-right: 10px;
-    fill: currentColor
 }

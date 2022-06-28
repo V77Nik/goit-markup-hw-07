@@ -1,6 +1,8 @@
 @import './utils/vars';
-@import './base/reset';
+@import './base/common';
 @import './components/container';
+@import './components/modal';
+@import './components/hidden';
 
 
 @import './layout/header';
@@ -10,3 +12,4 @@
 @import './layout/team';
 @import './layout/regular';
 @import './layout/footer';
+@import './layout/portfolio'

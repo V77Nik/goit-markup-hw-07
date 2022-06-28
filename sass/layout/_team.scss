@@ -7,7 +7,6 @@
     color: var(--first-title-color);
     margin-top: 0;
     margin-bottom: 50px;
-
 }
 
 .team-name {
@@ -31,30 +30,27 @@
     color: var(--third-title-color);
     padding: 0;
     margin-bottom: 16;
-
 }
 
 .team-list {
     display: flex;
     justify-content: space-between;
-
-
 }
 
 .team-item-foto {
     margin: 0;
     padding: 0;
-
 }
 
 .team {
-    background: #F5F4FA;
+    background: #f5f4fa;
 }
 
 .team-foto {
     padding: 30px 0px;
     background: var(--second-title-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
@@ -63,11 +59,8 @@
     justify-content: center;
 }
 
-
-
 .team-icon-big:not(:last-child) {
     margin-right: 10px;
-
 }
 
 .team-icon-link {
@@ -78,22 +71,18 @@
     border-radius: 50%;
     width: 44px;
     height: 44px;
-    fill: #AFB1B8;
+    fill: #afb1b8;
     color: var(--second-title-color);
 
     transition: background-color var(--timing-function);
-
-}
-
-.team-icon-link:hover,
-.team-icon-link:focus {
-    fill: var(--second-title-color);
-    background-color: var(--accent-color);
-
+    &:hover,
+    &:focus {
+        fill: var(--second-title-color);
+        background-color: var(--accent-color);
+    }
 }
 
 .team-icon-small:hover,
 .team-icon-small:focus {
     fill: currentColor;
-
 }
